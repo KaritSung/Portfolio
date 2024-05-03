@@ -89,7 +89,7 @@ export default function Home() {
             justifyContent={"center"}
             alignItems={"center"}
           >
-            <img className={styles.heroImg} src="/img/me.png"></img>
+            <Image className={styles.heroImg} alt="me" src="/img/me.png"></Image>
             <Box
               sx={{ order: 1 }}
               display={"flex"}
@@ -107,7 +107,7 @@ export default function Home() {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                Hi, I'm Karit
+                {"Hi, I'm Karit"}
               </Typography>
               <TypeAnimation
                 sequence={[
@@ -185,26 +185,28 @@ export default function Home() {
                   },
                 }}
               >
-                <img
+                <Image
+                  alt="bg_about"
                   style={{
                     width: "100%",
                     height: "100%",
                     borderRadius: "15px",
                   }}
                   src="/img/bg_about.avif"
-                ></img>
+                ></Image>
               </Box>
               <Stack direction={"column"} spacing={2} width={"60%"}>
                 <div className={styles.aboutItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <img
+                    <Image
+                      alt="frontend"
                       style={{
                         width: "70px",
                         height: "70px",
                         alignSelf: "center",
                       }}
                       src="/img/frontend.png"
-                    ></img>
+                    ></Image>
                     <Box>
                       <Typography
                         fontSize={"25px"}
@@ -227,14 +229,15 @@ export default function Home() {
                 </div>
                 <div className={styles.aboutItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <img
+                    <Image
+                      alt="backend"
                       style={{
                         width: "70px",
                         height: "70px",
                         alignSelf: "center",
                       }}
                       src="/img/backend.png"
-                    ></img>
+                    ></Image>
                     <Box>
                       <Typography
                         fontSize={"25px"}
@@ -256,14 +259,15 @@ export default function Home() {
                 </div>
                 <div className={styles.aboutItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <img
+                    <Image
+                      alt="document"
                       style={{
                         width: "70px",
                         height: "70px",
                         alignSelf: "center",
                       }}
                       src="/img/document.png"
-                    ></img>
+                    ></Image>
                     <Box>
                       <Typography
                         fontSize={"25px"}
@@ -336,7 +340,7 @@ export default function Home() {
                             justifyContent={"center"}
                             alignItems={"center"}
                           >
-                            <img
+                            <Image
                               style={{ width: "60%" }}
                               src={item.tech_img}
                               alt="tech_stack"
@@ -364,14 +368,15 @@ export default function Home() {
               >
                 <div className={styles.historyItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <img
+                    <Image
+                      alt="codediva"
                       style={{
                         width: "70px",
                         height: "70px",
                         alignSelf: "center",
                       }}
                       src="/img/codediva.jpeg"
-                    ></img>
+                    ></Image>
                     <Box>
                       <Typography
                         fontSize={"25px"}
@@ -456,14 +461,15 @@ export default function Home() {
                 </div>
                 <div className={styles.historyItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <img
+                    <Image
                       style={{
                         width: "70px",
                         height: "70px",
                         alignSelf: "center",
                       }}
+                      alt="codediva"
                       src="/img/codediva.jpeg"
-                    ></img>
+                    ></Image>
                     <Box>
                       <Typography
                         fontSize={"25px"}
@@ -528,14 +534,15 @@ export default function Home() {
                 </div>
                 <div className={styles.historyItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <img
+                    <Image
+                      alt="codediva"
                       style={{
                         width: "70px",
                         height: "70px",
                         alignSelf: "center",
                       }}
                       src="/img/codediva.jpeg"
-                    ></img>
+                    ></Image>
                     <Box>
                       <Typography
                         fontSize={"25px"}
