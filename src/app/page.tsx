@@ -282,7 +282,7 @@ export default function Home() {
                         color={"#fff"}
                         sx={{ wordBreak: "break-word" }}
                       >
-                        I&apos;m a system analyst with experience in creating
+                        I&apos;&apos;m a system analyst with experience in creating
                         technical documents and effectively communicating with
                         teams in a systematic manner
                       </Typography>
