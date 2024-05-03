@@ -35,6 +35,7 @@ jobs:
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
+<<<<<<< Updated upstream
           path: ./out
 
   deploy:
@@ -49,3 +50,8 @@ jobs:
       - name: Publish to GitHub Pages 🚀
         id: deployment
         uses: actions/deploy-pages@v4
+=======
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: public # The branch the action should deploy to.
+          folder: out # The folder the action should deploy to.
+>>>>>>> Stashed changes
