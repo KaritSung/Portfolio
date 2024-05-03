@@ -221,7 +221,7 @@ export default function Home() {
                         color={"#fff"}
                         sx={{ wordBreak: "break-word" }}
                       >
-                        I'm a front-end developer with experience in creating
+                        I&apos;m a front-end developer with experience in creating
                         high-quality responsive websites
                       </Typography>
                     </Box>
@@ -251,7 +251,7 @@ export default function Home() {
                         fontWeight={"300"}
                         color={"#fff"}
                       >
-                        I'm a backend developer with experience in creating APIs
+                        I&apos;m a backend developer with experience in creating APIs
                         and optimizing systems for speed and stability
                       </Typography>
                     </Box>
@@ -282,7 +282,7 @@ export default function Home() {
                         color={"#fff"}
                         sx={{ wordBreak: "break-word" }}
                       >
-                        I'm a system analyst with experience in creating
+                        I&apos;m a system analyst with experience in creating
                         technical documents and effectively communicating with
                         teams in a systematic manner
                       </Typography>
