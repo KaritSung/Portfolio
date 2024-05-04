@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "./component/navbar/navbar";
 import {
@@ -12,14 +11,10 @@ import {
   Grid,
   List,
   ListItem,
-  ListItemIcon,
-  Menu,
-  MenuItem,
-  Stack,
+  ListItemIcon, Stack,
   Typography,
-  useTheme,
+  useTheme
 } from "@mui/material";
-import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import CircleIcon from "@mui/icons-material/Circle";
 import EmailIcon from '@mui/icons-material/Email';
@@ -89,7 +84,8 @@ export default function Home() {
             justifyContent={"center"}
             alignItems={"center"}
           >
-            <Image className={styles.heroImg} alt="me" src="/img/me.png"></Image>
+            <h1>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</h1>
+            <img className={styles.heroImg} alt="me" src="/img/me.png"></img>
             <Box
               sx={{ order: 1 }}
               display={"flex"}
@@ -185,7 +181,7 @@ export default function Home() {
                   },
                 }}
               >
-                <Image
+                <img
                   alt="bg_about"
                   style={{
                     width: "100%",
@@ -193,12 +189,12 @@ export default function Home() {
                     borderRadius: "15px",
                   }}
                   src="/img/bg_about.avif"
-                ></Image>
+                ></img>
               </Box>
               <Stack direction={"column"} spacing={2} width={"60%"}>
                 <div className={styles.aboutItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <Image
+                    <img
                       alt="frontend"
                       style={{
                         width: "70px",
@@ -206,7 +202,7 @@ export default function Home() {
                         alignSelf: "center",
                       }}
                       src="/img/frontend.png"
-                    ></Image>
+                    ></img>
                     <Box>
                       <Typography
                         fontSize={"25px"}
@@ -229,7 +225,7 @@ export default function Home() {
                 </div>
                 <div className={styles.aboutItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <Image
+                    <img
                       alt="backend"
                       style={{
                         width: "70px",
@@ -237,7 +233,7 @@ export default function Home() {
                         alignSelf: "center",
                       }}
                       src="/img/backend.png"
-                    ></Image>
+                    ></img>
                     <Box>
                       <Typography
                         fontSize={"25px"}
@@ -259,7 +255,7 @@ export default function Home() {
                 </div>
                 <div className={styles.aboutItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <Image
+                    <img
                       alt="document"
                       style={{
                         width: "70px",
@@ -267,7 +263,7 @@ export default function Home() {
                         alignSelf: "center",
                       }}
                       src="/img/document.png"
-                    ></Image>
+                    ></img>
                     <Box>
                       <Typography
                         fontSize={"25px"}
@@ -340,7 +336,7 @@ export default function Home() {
                             justifyContent={"center"}
                             alignItems={"center"}
                           >
-                            <Image
+                            <img
                               style={{ width: "60%" }}
                               src={item.tech_img}
                               alt="tech_stack"
@@ -368,7 +364,7 @@ export default function Home() {
               >
                 <div className={styles.historyItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <Image
+                    <img
                       alt="codediva"
                       style={{
                         width: "70px",
@@ -376,7 +372,7 @@ export default function Home() {
                         alignSelf: "center",
                       }}
                       src="/img/codediva.jpeg"
-                    ></Image>
+                    ></img>
                     <Box>
                       <Typography
                         fontSize={"25px"}
@@ -461,7 +457,7 @@ export default function Home() {
                 </div>
                 <div className={styles.historyItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <Image
+                    <img
                       style={{
                         width: "70px",
                         height: "70px",
@@ -469,7 +465,7 @@ export default function Home() {
                       }}
                       alt="codediva"
                       src="/img/codediva.jpeg"
-                    ></Image>
+                    ></img>
                     <Box>
                       <Typography
                         fontSize={"25px"}
@@ -534,7 +530,7 @@ export default function Home() {
                 </div>
                 <div className={styles.historyItem}>
                   <Box flexDirection={"row"} display={"flex"} columnGap={3}>
-                    <Image
+                    <img
                       alt="codediva"
                       style={{
                         width: "70px",
@@ -542,7 +538,7 @@ export default function Home() {
                         alignSelf: "center",
                       }}
                       src="/img/codediva.jpeg"
-                    ></Image>
+                    ></img>
                     <Box>
                       <Typography
                         fontSize={"25px"}
