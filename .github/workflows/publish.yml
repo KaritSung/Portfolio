@@ -22,4 +22,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image to Docker Hub
-        run: docker push onezabma/portfolio
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/portfolio:$(date +%s)
