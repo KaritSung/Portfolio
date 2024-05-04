@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag onezabma/portfolio
+        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/portfolio:$(date +%s)
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
