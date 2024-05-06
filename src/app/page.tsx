@@ -640,13 +640,13 @@ export default function Home() {
               Projects
             </Typography>
             <Stack direction={{ xs: 'column', sm: 'column', md: 'column', lg: 'column', xl: 'row' }} mt={3} spacing={4} justifyContent={'center'}>
-              <Card sx={{ maxWidth: 345, borderRadius: '12px' }}>
+              <Card sx={{ maxWidth: 345, borderRadius: '12px', display: 'flex', flexDirection: 'column' }}>
                 <CardMedia
                   sx={{ height: 140, width: 345 }}
                   image="/img/portfolio_bg.png"
                   title="project"
                 />
-                <CardContent >
+                <CardContent sx={{ flexGrow: 1 }}>
                   <Typography gutterBottom variant="h5" component="div">
                     Portfolio
                   </Typography>
@@ -654,18 +654,26 @@ export default function Home() {
                     This project is created to showcase past works and experiences in a responsive web format
                   </Typography>
                 </CardContent>
-                <CardActions>
-                  <Button size="small">Learn More</Button>
+                <CardActions sx={{ justifySelf: 'end' }}>
+                  <Button size="small" onClick={() => {
+                    window.open("https://portfolio-eight-eta-61.vercel.app/", "_blank");
+                  }
+                  }>Learn More</Button>
+                  <Button size="small" onClick={() => {
+                    window.open("https://github.com/KaritSung/Portfolio", "_blank");
+                  }
+                  }>Go to repository</Button>
                 </CardActions>
+
               </Card>
 
-              <Card sx={{ maxWidth: 345, borderRadius: '12px' }}>
+              <Card sx={{ maxWidth: 345, borderRadius: '12px', display: 'flex', flexDirection: 'column' }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image="/img/hotelbooking_bg.png"
                   title="project"
                 />
-                <CardContent>
+                <CardContent sx={{ flexGrow: 1 }}>
                   <Typography gutterBottom variant="h5" component="div">
                     Hotel Booking
                   </Typography>
@@ -674,11 +682,20 @@ export default function Home() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small">Learn More</Button>
+                  <CardActions sx={{ justifySelf: 'end' }}>
+                    <Button size="small" onClick={() => {
+                      window.open("https://hotel-booking-peach-nu.vercel.app/", "_blank");
+                    }
+                    }>Learn More</Button>
+                    <Button size="small" onClick={() => {
+                      window.open("https://github.com/KaritSung/hotel_booking", "_blank");
+                    }
+                    }>Go to repository</Button>
+                  </CardActions>
                 </CardActions>
               </Card>
 
-              <Card sx={{ maxWidth: 345, borderRadius: '12px' }}>
+              <Card sx={{ maxWidth: 345, borderRadius: '12px', display: 'flex', flexDirection: 'column' }}>
                 <CardMedia
                   sx={{ height: 140 }}
                   image="/img/shopping_cart.png"
@@ -692,8 +709,41 @@ export default function Home() {
                     This project is created to simulate a shopping cart system and coupons to demonstrate the usage of conditions and discounts, ultimately summarizing the total price.
                   </Typography>
                 </CardContent>
-                <CardActions sx={{}}>
-                  <Button size="small">Learn More</Button>
+                <CardActions sx={{ justifySelf: 'end' }}>
+                  <Button size="small" onClick={() => {
+                    // window.open("https://portfolio-eight-eta-61.vercel.app/", "_blank");
+                  }
+                  }>Learn More</Button>
+                  <Button size="small" onClick={() => {
+                    // window.open("https://github.com/KaritSung/Portfolio", "_blank");
+                  }
+                  }>Go to repository</Button>
+                </CardActions>
+              </Card>
+
+              <Card sx={{ maxWidth: 345, borderRadius: '12px', display: 'flex', flexDirection: 'column' }}>
+                <CardMedia
+                  sx={{ height: 140 }}
+                  image="/img/admin_dash.png"
+                  title="project"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Admin dashboard template
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    This project is created to simulate a shopping cart system and coupons to demonstrate the usage of conditions and discounts, ultimately summarizing the total price.
+                  </Typography>
+                </CardContent>
+                <CardActions sx={{ justifySelf: 'end' }}>
+                  <Button size="small" onClick={() => {
+                    window.open("https://admin-dashboard-template-delta-ivory.vercel.app/", "_blank");
+                  }
+                  }>Learn More</Button>
+                  <Button size="small" onClick={() => {
+                    window.open("https://github.com/KaritSung/admin-dashboard-template", "_blank");
+                  }
+                  }>Go to repository</Button>
                 </CardActions>
               </Card>
             </Stack>
