@@ -84,7 +84,6 @@ export default function Home() {
             justifyContent={"center"}
             alignItems={"center"}
           >
-            <h1>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</h1>
             <img className={styles.heroImg} alt="me" src="/img/me.png"></img>
             <Box
               sx={{ order: 1 }}
