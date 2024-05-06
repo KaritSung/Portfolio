@@ -732,7 +732,7 @@ export default function Home() {
                     Admin dashboard template
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    This project is created to simulate a shopping cart system and coupons to demonstrate the usage of conditions and discounts, ultimately summarizing the total price.
+                    This project is designed to create an admin dashboard template for easy reuse in future projects.
                   </Typography>
                 </CardContent>
                 <CardActions sx={{ justifySelf: 'end' }}>
