@@ -727,7 +727,7 @@ export default function Home() {
                   image="/img/admin_dash.png"
                   title="project"
                 />
-                <CardContent>
+                <CardContent sx={{ flexGrow: 1 }}>
                   <Typography gutterBottom variant="h5" component="div">
                     Admin dashboard template
                   </Typography>
